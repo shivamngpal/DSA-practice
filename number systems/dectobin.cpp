@@ -36,10 +36,10 @@ int DecimalToBinaryMethod2(int n){
     int binaryno = 0;
     int place=1;
     while(n>0){
-        int bit = n&1;                          //gives first bit  
+        int bit = n&1;                          //gives first bit  (last)
         // cout <<bit <<endl;
         binaryno = bit * place + binaryno;
-        n=n>>1;                                 //divide no. by 2
+        n=n>>1;                                 //divide no. by 2^(1) =2
         place *= 10;
 
     }
