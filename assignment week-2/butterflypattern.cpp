@@ -46,8 +46,8 @@ int main(){
 
     for(int row=0; row<2*n; row++){
         
-        int cond = row<n ? row : 2*n-row-1;
-        int space_count = row<n ? 2*(n-row-1) : row-cond-1;
+        int cond = row<n ? row : 2*n-row-1; //row<n means growing phase
+        int space_count = row<n ? 2*(n-row-1) : row-cond-1; //cond means hrr row me kitne stars print honge.
 
         for(int col=0; col<2*n; col++){
             if(col<=cond){
