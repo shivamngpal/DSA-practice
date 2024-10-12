@@ -1,4 +1,6 @@
 #include<iostream>
+#include<algorithm>
+
 using namespace std;
 
 //SWAP two numbers
@@ -23,16 +25,31 @@ void swapNum(){
 void ReverseArray(int arr[], int size){
     int i=0;
     int j=size-1;
-    int temp;
+    // int temp;
 
-    while(i<j){
-        temp=arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
+//Using temp variable
+    // while(i<j){
+    //     temp=arr[i];
+    //     arr[i]=arr[j];
+    //     arr[j]=temp;
 
-        i++;
-        j--;
-    }
+    //     i++;
+    //     j--;
+    // }
+
+//using swap fxn
+    // while(i<j){
+    //     swap(arr[i], arr[j]);
+    //     i++;
+    //     j--;
+    // }
+
+//OR - swap fxn - For Professionals 
+    // while(i<j)
+    //     swap(arr[i++],arr[j--]);    //using post increment/decrement which means phle use krlo fir plus/minus krdo-> so arr[i], arr[j] will be used then we will use arr[i++] and arr[j--]
+
+//Using STL library -> reverse method -> reverse(Starting address, ending address)
+    reverse(arr,arr+size);
 
     cout<<"Reverse Array : ";
     for(int m=0; m<size; m++){
