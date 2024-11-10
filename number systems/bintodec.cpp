@@ -37,7 +37,7 @@ int bitwise(string binaryStr) {
     int n = binaryStr.length();         //gives the length of the binary no. string
 
     for (int i = n - 1; i >= 0; i--) {  //starts from last to first.
-        int bit = binaryStr[i] - '0';    //Used to convert string to bit let's say ASCII value of '0' is 48 and '1' is 49 so when 49-48=1 so we are converting string '1' to integer 1.
+        int bit = binaryStr[i] - '0';    //Used to convert string to bit, let's say ASCII value of '0' is 48 and '1' is 49 so when 49-48=1 so we are converting string '1' to integer 1.
 //For example-1010,For binaryStr[0] which is '1', binaryStr[0] - '0' results in 1.
 // For binaryStr[1] which is '0', binaryStr[1] - '0' results in 0.
 // For binaryStr[2] which is '1', binaryStr[2] - '0' results in 1.

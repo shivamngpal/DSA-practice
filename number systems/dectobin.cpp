@@ -2,7 +2,7 @@
 #include <math.h>  //We can also include <cmath> instead of math.h
 using namespace std;
 
-//In this fxn we are using pow fxn whichj gives floating point results and that leads to error in our output for 4,5,7, etc.
+//In this fxn we are using pow fxn which gives floating point results and that leads to error in our output for 4,5,7, etc.
 //So we use another method which does not require pow function in DecimalToBinaryGPT fxn hence we get the correct result.
 int DecimalToBinaryMethod1(int n){  
     //Division Method
@@ -36,7 +36,7 @@ int DecimalToBinaryMethod2(int n){
     int binaryno = 0;
     int place=1;
     while(n>0){
-        int bit = n&1;                          //gives first bit  (last)
+        int bit = n&1;                          //gives LSB (last bit)
         // cout <<bit <<endl;
         binaryno = bit * place + binaryno;
         n=n>>1;                                 //divide no. by 2^(1) =2

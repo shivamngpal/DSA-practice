@@ -15,6 +15,7 @@ void Transpose(int arr[][3], int rowsize, int colsize){
             swap(arr[i][j],arr[j][i]);
         }
     }
+    //printing transpose
     for(int i=0; i<rowsize; i++){
         for(int j=0; j<colsize; j++){
             cout<<arr[i][j]<<" ";
