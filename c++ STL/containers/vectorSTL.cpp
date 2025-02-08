@@ -82,7 +82,7 @@ int main(){
     cout<<"printing second vector";
     cout<<second[0]<<" "<<second[1]<<" "<<second[2]<<" "<<second[3]<<endl;
 
-//for each loop - tarveersing vector elements
+//for each loop - tarversing vector elements
     for(int i:marks){   //for each integer i inside vector marks, print i
         cout<<i<<" ";   //print i
     }
