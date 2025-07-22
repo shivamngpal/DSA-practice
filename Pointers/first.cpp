@@ -25,21 +25,24 @@ int main(){
     // we need to make pointer variable to store address
     // int c=&a;
 
-    int a = 5;
-    int* p = &a;
-    // copying pointer
-    int* q = p;
+    // int a = 5;
+    // int* p = &a;
+    // // copying pointer
+    // int* q = p;
 
-    cout<<a<<endl;
-    cout<<&a<<endl;
-    // cout<<*a<<endl;
-    cout<<p<<endl;
-    cout<<&p<<endl;
-    cout<<*p<<endl;
-    cout<<q<<endl;
-    cout<<&q<<endl;
-    cout<<*q<<endl;
+    // cout<<a<<endl;
+    // cout<<&a<<endl;
+    // // cout<<*a<<endl;
+    // cout<<p<<endl;
+    // cout<<&p<<endl;
+    // cout<<*p<<endl;
+    // cout<<q<<endl;
+    // cout<<&q<<endl;
+    // cout<<*q<<endl;
 
+    int* ptr = 0;
+    *ptr = 10;
+    cout<<*ptr<<endl;
 
 
     return 0;

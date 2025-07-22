@@ -90,7 +90,8 @@ int main(){
 
 //erase in list
     cout<<first.size()<<endl;
-    first.erase(first.begin(),first.end()); //start se lekar end tk erase krdo
+    // first.erase(first.begin()); //1st element erase krdo
+    // first.erase(first.begin(),first.end()); //start se end tk erase krdo
     cout<<first.size()<<endl;
 
 

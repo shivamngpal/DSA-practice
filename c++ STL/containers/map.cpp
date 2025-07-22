@@ -43,7 +43,7 @@ int main(){
 //         cout<<p.first<<" "<<p.second<<endl;
 //         it++;
 //     }
-//     // data is printed in random order in umordered_map
+//     // data is printed in random order in unordered_map
 
 //     // erase()
 //     // table.erase(table.begin());
