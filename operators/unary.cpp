@@ -2,8 +2,9 @@
 using namespace std;
 
 int main(){
-    int a=5;                  
-    cout<<(++a)<<endl;    //++a -> Pre-increment operator-> Phle increment kardo fir print kardo
+    int a=5;  
+    int z = sizeof(a++);                
+    cout<<(a)<<endl;    //++a -> Pre-increment operator-> Phle increment kardo fir print kardo
 
     int b=10;
     cout<<(b++)<<endl;    //b++ -> Post-increment operator -> Phle print kardo fir increment kar dena -> 10 is printed then it is incremented to 11.
